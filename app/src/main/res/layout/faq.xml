@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        shimmer:duration="800"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include layout="@layout/faq_loading" />
+            <include layout="@layout/faq_loading" />
+            <include layout="@layout/faq_loading" />
+            <include layout="@layout/faq_loading" />
+            <include layout="@layout/faq_loading" />
+            <include layout="@layout/faq_loading" />
+            <include layout="@layout/faq_loading" />
+            <include layout="@layout/faq_loading" />
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <include layout="@layout/line_loder"/>
+
+    <ExpandableListView
+        android:id="@+id/expandableListView"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+        android:divider="#00ffffff"
+        android:dividerHeight="10dp"
+        android:layout_margin="20dp"/>
+</LinearLayout>

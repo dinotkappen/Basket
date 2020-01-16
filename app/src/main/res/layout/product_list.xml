@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            app:duration="800"
+            android:visibility="gone">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <include layout="@layout/product_list_item_loading" />
+                    <include layout="@layout/product_list_item_loading" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <include layout="@layout/product_list_item_loading" />
+                    <include layout="@layout/product_list_item_loading" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <include layout="@layout/product_list_item_loading" />
+                    <include layout="@layout/product_list_item_loading" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <include layout="@layout/product_list_item_loading" />
+                    <include layout="@layout/product_list_item_loading" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <TextView
+            android:id="@+id/txt_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+           />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recy_category"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="20dp">
+        </android.support.v7.widget.RecyclerView>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+            android:layout_weight="0.1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:orientation="vertical"
+                    android:background="@color/hash"
+                   />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recy_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/len_sort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_weight="0.1">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/sort"
+                    android:padding="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/hash_text"
+                    android:text="@string/sort"
+                    android:fontFamily="@font/font_small"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0.1dp"
+                android:layout_height="match_parent"
+                android:background="@color/hash_text"
+                android:layout_margin="10dp"/>
+            <LinearLayout
+                android:id="@+id/len_filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_weight="0.1">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/filter"
+                    android:padding="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/hash_text"
+                    android:text="@string/filter"
+                    android:fontFamily="@font/font_small"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="15dp"
+        app:menu_colorNormal="@color/colorAccent"
+        tools:fab_colorNormal="@color/colorAccent"
+        tools:fab_colorPressed="@color/loading"
+        tools:fab_colorRipple="@color/light_text"
+        tools:menu_icon="@drawable/filter">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_filter_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/filter"
+            app:fab_colorNormal="@color/colorAccent"
+            app:fab_size="mini"
+            android:visibility="gone"
+            tools:fab_colorNormal="@color/colorAccent"
+            tools:fab_label="Filter"
+            tools:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/filter"
+            app:fab_colorNormal="@color/colorAccent"
+            app:fab_size="mini"
+            tools:fab_colorNormal="@color/colorAccent"
+            tools:fab_label="Filter"
+            tools:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_sot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sort"
+            app:fab_colorNormal="@color/colorAccent"
+            app:fab_size="mini"
+            tools:fab_colorNormal="@color/colorAccent"
+            tools:fab_label="Filter"
+            tools:fab_size="mini" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+    <LinearLayout
+        android:id="@+id/len_no_itme"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_cart_empty"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/product_not_found"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:visibility="gone"
+        app:indicatorColor="@color/round_loading"
+        app:indicatorName="BallScaleMultipleIndicator"
+        android:layout_gravity="center"
+        />
+    <include layout="@layout/line_loder"/>
+
+</FrameLayout>
+
+<!--    <include layout="@layout/filter_sheet" />-->
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/tool_bar_activity" />
+
+        <include layout="@layout/line_loder" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/add_new_address"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edit_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:hint="@string/name"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hash"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/edit_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:hint="@string/email"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hash"
+                    android:textSize="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+974"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/edit_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:hint="@string/phone_number"
+
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/hash"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/edit_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:hint="@string/address"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hash"
+                    android:textSize="12dp" />
+
+                <FrameLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <Spinner
+                        android:id="@+id/spin_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:id="@+id/edit_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@color/backgroundColor"
+                            android:focusableInTouchMode="false"
+                            android:fontFamily="@font/font_small"
+                            android:hint="@string/city"
+                            android:padding="10dp"
+                            android:textColor="@color/black" />
+
+                        <!--                        <LinearLayout-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="0.1dp"-->
+                        <!--                            android:background="@color/black"-->
+                        <!--                            android:orientation="horizontal" />-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/hash" />
+
+
+                    </LinearLayout>
+                </FrameLayout>
+
+
+                <EditText
+                    android:id="@+id/edit_build"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:hint="@string/building_number"
+                    android:inputType="number"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hash"
+                    android:textSize="12dp" />
+
+
+                <EditText
+                    android:id="@+id/edit_zone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:hint="@string/zone"
+                    android:inputType="number"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hash"
+                    android:textSize="12dp" />
+
+
+                <EditText
+                    android:id="@+id/edit_street"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:hint="@string/street"
+                    android:inputType="number"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hash"
+                    android:textSize="12dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/edit_text_round"
+                    android:gravity="center|left"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/small_icons"
+                        android:layout_height="@dimen/small_icons"
+                        android:src="@drawable/key" />
+
+                    <EditText
+                        android:id="@+id/edit_confirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_text_height"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="0.1"
+                        android:background="@color/transprint"
+                        android:gravity="center|left"
+                        android:hint="@string/confirm_password"
+                        android:inputType="textPassword"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/normalText" />
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/bt_add_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/gradient"
+                    android:text="Add"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:indicatorColor="@color/round_loading"
+        app:indicatorName="BallScaleMultipleIndicator" />
+
+
+</FrameLayout>

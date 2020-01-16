@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "17356877573",
+    "firebase_url": "https://basket-249309.firebaseio.com",
+    "project_id": "basket-249309",
+    "storage_bucket": "basket-249309.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17356877573:android:c4a9143032b09dfa",
+        "android_client_info": {
+          "package_name": "com.shopping.basket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "17356877573-2j5rs4b78k6j7d6qq104h5tf4gke31p0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shopping.basket",
+            "certificate_hash": "00f311a1e7f2428f0437e4c4d65b3efd7800503c"
+          }
+        },
+        {
+          "client_id": "17356877573-0rankpg2uno8urbk2rqu2n656sj61neg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxOaP3wr_HUpWbTY0WG5f85CdDhGOwwGA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "17356877573-0rankpg2uno8urbk2rqu2n656sj61neg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "17356877573-cn238a6uctklastqi07t368ske006i1d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.whyte.basket"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topBarHeight">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topBarHeight"
+        android:background="@color/colorPrimary">
+
+
+
+    <ImageView
+        android:id="@+id/img_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/menu"
+        android:padding="10dp"
+       />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"/>
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/share"
+        android:padding="15dp"
+        android:visibility="gone"/>
+
+
+
+
+
+    <FrameLayout
+        android:id="@+id/fram_cart"
+        android:layout_width="50dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/cart"
+            android:visibility="visible"/>
+        <FrameLayout
+            android:id="@+id/fram_cart_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_cart_count"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/txt_cart_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="5"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+
+    </FrameLayout>
+    <ImageView
+        android:id="@+id/img_back_right"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/share"
+        android:layout_gravity="center"
+        android:padding="15dp"
+        />
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:gravity="center"
+        android:text="Title"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+    <ImageView
+        android:id="@+id/img_log"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.1"
+        android:src="@drawable/tool_bar_logo"
+        android:padding="15dp"
+        android:layout_gravity="center"/>
+</FrameLayout>

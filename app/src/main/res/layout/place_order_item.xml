@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical">-->
+
+
+        <ImageView
+            android:id="@+id/img_product"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:src="@drawable/product1" />
+
+        <!--</LinearLayout>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Toy Car Remote"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mediam_text"
+                android:lines="1"
+                android:ellipsize="end" />
+
+            <TextView
+                android:id="@+id/txt_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="344 Qar"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normalText" />
+
+            <TextView
+                android:id="@+id/txt_qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="QTY : 02"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normalText" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

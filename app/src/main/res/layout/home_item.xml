@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_weight="0.1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:background="@drawable/round_corner"
+       android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center|left">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Furniture"
+           android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+           android:textColor="@color/hash_text"
+            android:textStyle="bold"
+            android:textSize="@dimen/normalText"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_product"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/product1"
+        android:layout_gravity="center|right"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"/>
+
+</FrameLayout>

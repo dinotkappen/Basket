@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#231f20</color>
+    <color name="colorPrimaryDark">#231f20</color>
+    <color name="colorAccent">#b01f24</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transprint">#00000000</color>
+    <color name="hash">#707070</color>
+    <color name="fb_bt_color">#2185CF</color>
+    <color name="hash_text">#696969</color>
+    <color name="light_hash">#E6E6E6</color>
+    <color name="transprent">#00E6E6E6</color>
+    <color name="strok_color">#7E7E7E</color>
+    <color name="corner_round_fill">#D8D8D8</color>
+    <color name="backgroundColor">#f5f5f5</color>
+    <color name="out_of_Stok">#A4CECDCD</color>
+    <color name="red">#CF213B</color>
+    <color name="light_text">#919191</color>
+    <color name="green">#13A819</color>
+    <color name="goolge_plus_color">#D50707</color>
+    <color name="loading">#dddddd</color>
+    <color name="round_loading">#9E9E9E</color>
+</resources>

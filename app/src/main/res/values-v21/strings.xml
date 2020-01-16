@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="bestseller">BestSellers</string>
+    <string name="add_your_review">Add your Review</string>
+    <string name="send_review">Send Review</string>
+    <string name="write_your_review">Write your review</string>
+    <string name="title">Title</string>
+    <string name="cancel">Cancel</string>
+    <string name="field_requirend">This Field is required</string>
+    <string name="address">Address</string>
+    <string name="name">Name</string>
+    <string name="permission_nessary">Permission necessary</string>
+    <string name="sotrageis_improtant">READ EXTERNAL STORAGE permission is necessary to write event!!!</string>
+    <string name="enter_message">Enter A Message</string>
+    <string name="login">Login</string>
+    <string name="pass_not_match">Confirm password does not match!</string>
+    <string name="select_tome_of_delivery">Select Tome of Delivery</string>
+    <string name="add_new_address">Add New Address</string>
+    <string name="city">City</string>
+    <string name="add_a_new_address">Add a new address</string>
+    <string name="edit_address">Edit Address</string>
+    <string name="order_id">Order Id</string>
+    <string name="date">Date</string>
+    <string name="price">Price</string>
+    <string name="empty">Empty</string>
+</resources>

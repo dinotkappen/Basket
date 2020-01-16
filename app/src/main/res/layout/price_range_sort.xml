@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:rsb="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <com.yahoo.mobile.client.android.util.rangeseekbar.RangeSeekBar
+        android:id="@+id/rangeSeekbar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        rsb:absoluteMaxValue="0"
+        rsb:absoluteMinValue="10000"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/txt_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textSize="20dp"
+            android:layout_gravity="right"
+
+            android:padding="20dp"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/txt_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:textSize="20dp"
+            android:layout_gravity="right"
+
+            android:padding="20dp"
+            android:textColor="@color/colorAccent"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include
+        layout="@layout/tool_bar_activity"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/len_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="20dp"
+               android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Terms &amp; Condi…."
+                    android:layout_weight="0.1"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_arrow"/>
+            </LinearLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="You may not be aware that your cat has digestive sensitivities. However, you can find clues in their litter box. Lots of stinky stool may mean your cat has a sensitive stomach. (We recommend that you see your vet when you have concerns about your cat’s digestive issues.)
+
+Royal Canin Digest Sensitive Chunks in Gravy wet cat food is formulated to support healthy digestion for your adult cat. This complete and balanced meal comes in a convenient pouch. This formula features highly digestible proteins to promote digestive health and reduce stool odor for your indoor cat. The high protein formula also helps your cat maintain a healthy weight. And a uniquely balanced blend of vitamins and minerals promotes your pet’s optimal health and wellness. Mix with Royal Canin Digestive Care dry cat food for the perfect nutritional complement
+You may not be aware that your cat has digestive sensitivities. However, you can find clues in their litter box. Lots of stinky stool may mean your cat has a sensitive stomach. (We recommend that you see your vet when you have concerns about your cat’s digestive issues.)
+
+Royal Canin Digest Sensitive Chunks in Gravy wet cat food is formulated to support healthy digestion for your adult cat. This complete and balanced meal comes in a convenient pouch. This formula features highly digestible proteins to promote digestive health and reduce stool odor for your indoor cat. The high protein formula also helps your cat maintain a healthy weight. And a uniquely balanced blend of vitamins and minerals promotes your pet’s optimal health and wellness. Mix with Royal Canin Digestive Care dry cat food for the perfect nutritional complement"
+    android:gravity="center"
+    android:layout_margin="15dp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

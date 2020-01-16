@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    android:layout_weight="0.1"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="0.1dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/hash"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="0.1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="vertical"
+                android:padding="10dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/len_fav"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="7dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/img_favourite"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_product"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/product1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/len_out_of_stock"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/out_of_stok"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Out Of Stock"
+                    android:textColor="@color/red" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/len_click"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="bottom"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:layout_weight="0.1">
+
+                <TextView
+                    android:id="@+id/txt_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Toy Car Remote"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/normalText"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+
+                <TextView
+                    android:id="@+id/txt_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="344 Qar"
+                    android:textColor="@color/hash_text"
+                    android:textSize="@dimen/normalText" />
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/img_cart"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center|right"
+                android:src="@drawable/cart_round"
+                android:layout_marginRight="20dp"
+                android:padding="5dp"
+                android:layout_marginBottom="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:orientation="vertical"
+            android:background="@color/hash"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0.1dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/hash"/>
+
+
+</LinearLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer_view_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                shimmer:duration="800"
+                android:visibility="gone">
+
+                <!-- Adding 7 rows of placeholders -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <include layout="@layout/favorites_loading" />
+                    <include layout="@layout/favorites_loading" />
+                    <include layout="@layout/favorites_loading" />
+                    <include layout="@layout/favorites_loading" />
+                    <include layout="@layout/favorites_loading" />
+
+
+                </LinearLayout>
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recy_favorites"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:nestedScrollingEnabled="false">
+
+
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/net_total"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/normalText"
+                    android:layout_weight="0.1"
+                    />
+                <TextView
+                    android:id="@+id/txt_net_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Qar 5.0"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/normalText"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/discount"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/normalText"
+                    android:layout_weight="0.1"
+                    />
+                <TextView
+                    android:id="@+id/txt_discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Qar 0.0"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/normalText"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shipping_amount"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/normalText"
+                    android:layout_weight="0.1"
+                    />
+                <TextView
+                    android:id="@+id/txt_shipping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Qar 0.0"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/normalText"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="@drawable/corner_rounf_light_fill">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/net_total"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/normalText"
+                    android:layout_weight="0.1"
+                    />
+                <TextView
+                    android:id="@+id/txt_net_total1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Qar 5.0"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/normalText"
+
+                    />
+
+
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/bt_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient"
+                android:text="@string/checkout"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/len_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_cart_empty"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:text="@string/you_bag_is_empty_add_one_and_start_shopping"
+            android:gravity="center"
+            android:textColor="@color/strok_color"
+            android:fontFamily="@font/font_small"
+            />
+
+    </LinearLayout>
+    <include layout="@layout/line_loder"/>
+
+
+</FrameLayout>
